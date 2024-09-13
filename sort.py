@@ -102,10 +102,10 @@ def bubble_sort(list):
         return list
 
 test = random_list(random.randint(1, 50))
-
-print('Sort Methods Validation:')
 print('Random Input: %s' % test)
 print('Expected Output: %s' % quick_sort((test.copy())))
+
+print('Sort Methods Validation:')
 print('Quick: %s' % is_sorted(quick_sort(test.copy())))
 print('Merge: %s' % is_sorted(merge_sort(test.copy())))
 print('Selection: %s' % is_sorted(selection_sort(test.copy())))
